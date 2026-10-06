@@ -1,8 +1,8 @@
 export const personalInfo = {
-  name: "Logan Hayes",
+  name: "Shubham",
   role: "Creative developer and designer",
   heroSubtitle: "Creative developer and designer who\nenjoys building simple, engaging websites.",
-  ctaText: "Get Template",
+  ctaText: "View Resume",
   ctaLink: "#contact",
   aboutIntroHeading: "More than pixels",
   aboutBio:
@@ -24,21 +24,45 @@ export const services = [
     title: "Web design",
     text: "Clean and modern websites designed with clarity, balance, and thoughtful user experiences.",
     iconName: "PanelsTopLeft",
+    features: [
+      "Responsive layouts",
+      "Visual hierarchy",
+      "Modern aesthetics",
+      "Clean structure",
+    ],
   },
   {
     title: "Framer development",
     text: "Responsive Framer websites developed with smooth interactions, structure, and seamless performance.",
     iconName: "LayoutTemplate",
+    features: [
+      "Custom components",
+      "Smooth animations",
+      "CMS integration",
+      "SEO optimization",
+    ],
   },
   {
     title: "UI/UX design",
     text: "User-focused digital interfaces crafted for usability, clarity, and engaging visual experiences.",
     iconName: "MousePointer2",
+    features: [
+      "Wireframing & Prototyping",
+      "User research",
+      "Design systems",
+      "Usability testing",
+    ],
   },
   {
     title: "Creative direction",
     text: "Creative brand experiences shaped through refined visuals, storytelling, and consistent digital presence.",
     iconName: "PenTool",
+    features: [
+      "Brand identity",
+      "Visual storytelling",
+      "Art direction",
+      "Concept development",
+    ],
   },
 ];
 

@@ -316,25 +316,95 @@ h1, h2, h3, .project-caption, .social-grid > a > span:first-child, .detail-navig
 .service-row {
   display: grid;
   grid-template-columns: 126px 304px 1fr;
-  align-items: center;
+  align-items: flex-start;
   min-height: 76px;
-  padding: 12px 16px;
+  padding: 24px 16px;
   border-bottom: 1px solid var(--border);
-  transition: background 0.25s;
+  transition: background 0.4s ease;
 }
 
 .service-row:hover {
-  background: var(--muted);
+  background: var(--card); /* Or var(--muted), but card might give a nice flat look */
+}
+
+.service-icon-wrapper {
+  display: flex;
+  align-items: center;
+  height: 28px; /* To match h3 line-height for vertical alignment */
+}
+
+.service-icon {
+  color: var(--foreground);
+  transition: color 0.4s ease;
+}
+
+.service-row:hover .service-icon {
+  color: #3b82f6; /* Blue on hover */
 }
 
 .service-row h3 {
   font-size: 24px;
+  line-height: 28px;
+  margin: 0;
+}
+
+.service-content {
+  display: flex;
+  flex-direction: column;
 }
 
 .service-row p {
   color: var(--muted-foreground);
   font-size: 16px;
-  line-height: 1.4;
+  line-height: 1.5;
+  margin: 0;
+  margin-top: 2px;
+}
+
+.service-features-wrapper {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.4s ease, margin-top 0.4s ease;
+}
+
+.service-row:hover .service-features-wrapper {
+  grid-template-rows: 1fr;
+  margin-top: 16px;
+}
+
+.service-features {
+  overflow: hidden;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.service-features li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 15px;
+  color: var(--foreground);
+  opacity: 0;
+  transform: translateY(5px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.service-row:hover .service-features li {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.service-row:hover .service-features li:nth-child(1) { transition-delay: 0.1s; }
+.service-row:hover .service-features li:nth-child(2) { transition-delay: 0.15s; }
+.service-row:hover .service-features li:nth-child(3) { transition-delay: 0.2s; }
+.service-row:hover .service-features li:nth-child(4) { transition-delay: 0.25s; }
+
+.feature-check {
+  color: #3b82f6; /* Blue check */
 }
 
 /* Process Section */
