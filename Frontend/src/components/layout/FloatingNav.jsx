@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import {
   Home,
   UserRound,
+  GraduationCap,
   BriefcaseBusiness,
   Sparkles,
   GitBranch,
@@ -12,6 +13,7 @@ import { navMenu } from "../../data/portfolioData";
 const iconMap = {
   Home,
   UserRound,
+  GraduationCap,
   BriefcaseBusiness,
   Sparkles,
   GitBranch,

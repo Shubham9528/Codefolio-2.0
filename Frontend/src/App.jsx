@@ -4,6 +4,7 @@ import { Footer } from "./components/layout/Footer";
 import { FloatingNav } from "./components/layout/FloatingNav";
 import { Hero } from "./components/sections/Hero";
 import { About } from "./components/sections/About";
+import { Experience } from "./components/sections/Experience";
 import { Projects } from "./components/sections/Projects";
 import { Services } from "./components/sections/Services";
 import { Process } from "./components/sections/Process";
@@ -18,6 +19,7 @@ function App() {
       <main>
         <Hero />
         <About />
+        <Experience />
         <Projects />
         <Services />
         <Process />

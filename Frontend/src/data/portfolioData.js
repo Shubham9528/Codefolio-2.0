@@ -89,6 +89,42 @@ export const processSteps = [
   },
 ];
 
+export const experience = [
+  {
+    role: "Senior Frontend Engineer",
+    company: "Acme Corp",
+    year: "2023 - Present",
+    description: "Leading the frontend architecture and building scalable web applications with React and Next.js.",
+  },
+  {
+    role: "Creative Developer",
+    company: "Studio Minimal",
+    year: "2020 - 2023",
+    description: "Crafted award-winning interactive experiences and marketing sites for global brands.",
+  },
+  {
+    role: "UI/UX Designer",
+    company: "Design Co",
+    year: "2018 - 2020",
+    description: "Designed user-centric interfaces and established design systems for enterprise software.",
+  },
+];
+
+export const education = [
+  {
+    degree: "M.S. Computer Science",
+    institution: "Tech University",
+    year: "2016 - 2018",
+    description: "Focused on human-computer interaction and advanced software engineering principles.",
+  },
+  {
+    degree: "B.A. Graphic Design",
+    institution: "Design Institute",
+    year: "2012 - 2016",
+    description: "Studied typography, visual communication, and digital media design.",
+  },
+];
+
 export const projects = [
   {
     slug: "north",
@@ -175,6 +211,7 @@ export const socialLinks = [
 export const navMenu = [
   { label: "Home", to: "home", iconName: "Home" },
   { label: "About", to: "about", iconName: "UserRound" },
+  { label: "Experience", to: "experience", iconName: "GraduationCap" },
   { label: "Projects", to: "projects", iconName: "BriefcaseBusiness" },
   { label: "Services", to: "services", iconName: "Sparkles" },
   { label: "Process", to: "process", iconName: "GitBranch" },
