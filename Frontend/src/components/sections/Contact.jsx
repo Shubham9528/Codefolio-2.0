@@ -2,7 +2,7 @@ import { useState } from "react";
 import { SectionTitle } from "../ui/SectionTitle";
 import { Button } from "../ui/Button";
 import { services, socialLinks, personalInfo } from "../../data/portfolioData";
-import contactImg from "/process.png";
+import contactImg from "/contact.png";
 
 export function Contact() {
   const [sent, setSent] = useState(false);
@@ -11,9 +11,11 @@ export function Contact() {
     e.preventDefault();
     const form = e.currentTarget;
     const data = new FormData(form);
-    const subject = encodeURIComponent(`Project inquiry from ${data.get("name")}`);
+    const subject = encodeURIComponent(
+      `Project inquiry from ${data.get("name")}`,
+    );
     const body = encodeURIComponent(
-      `Name: ${data.get("name")}\nEmail: ${data.get("email")}\nService: ${data.get("service")}\nBudget: ${data.get("budget")}\n\n${data.get("message")}`
+      `Name: ${data.get("name")}\nEmail: ${data.get("email")}\nService: ${data.get("service")}\nBudget: ${data.get("budget")}\n\n${data.get("message")}`,
     );
     window.location.href = `mailto:${personalInfo.email}?subject=${subject}&body=${body}`;
     setSent(true);
@@ -32,12 +34,19 @@ export function Contact() {
             </label>
             <label>
               Email
-              <input name="email" type="email" placeholder="jane@example.com" required />
+              <input
+                name="email"
+                type="email"
+                placeholder="jane@example.com"
+                required
+              />
             </label>
             <label>
               Service
               <select name="service" required defaultValue="">
-                <option value="" disabled>Select...</option>
+                <option value="" disabled>
+                  Select...
+                </option>
                 {services.map((s) => (
                   <option key={s.title}>{s.title}</option>
                 ))}
@@ -46,7 +55,9 @@ export function Contact() {
             <label>
               Budget
               <select name="budget" required defaultValue="">
-                <option value="" disabled>Select...</option>
+                <option value="" disabled>
+                  Select...
+                </option>
                 <option>Upto $2000</option>
                 <option>$2000 - $5000</option>
                 <option>$5000+</option>
