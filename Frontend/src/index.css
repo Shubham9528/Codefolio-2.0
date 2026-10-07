@@ -495,7 +495,6 @@ h1, h2, h3, .project-caption, .social-grid > a > span:first-child, .detail-navig
 
 .process-memoji {
   position: relative;
-  border-right: 1px solid var(--border);
 }
 
 .process-memoji img {
@@ -509,52 +508,60 @@ h1, h2, h3, .project-caption, .social-grid > a > span:first-child, .detail-navig
 }
 
 .process-steps {
-  padding-top: 0;
-}
-
-.process-step {
-  min-height: 260px;
-  border-bottom: 1px solid var(--border);
-  border-left: 1px solid var(--border);
-  padding: 12px 50px 20px 14px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  margin-left: 0;
-  transition: margin-left 0.55s ease, opacity 0.4s ease;
-  opacity: 0.45;
 }
 
-.process-step.revealed {
-  opacity: 1;
+/* 2-col card: narrow number column | wide content column */
+/* All cards share same sticky top; margin-left creates staircase indent */
+.process-step {
+  position: sticky;
+  top: 100px;
+  height: 240px;
+  background: var(--background);
+  border-bottom: 1px solid var(--border);
+  display: grid;
+  grid-template-columns: 56px 1fr;
+  box-shadow: 0 -6px 20px oklch(0 0 0 / 0.06);
 }
 
-.process-step:nth-child(2).revealed {
-  margin-left: 48px;
-}
+.process-step:nth-child(1) { z-index: 1; }
+.process-step:nth-child(2) { z-index: 2; margin-left: 56px; }
+.process-step:nth-child(3) { z-index: 3; margin-left: 112px; }
+.process-step:nth-child(4) { z-index: 4; margin-left: 168px; }
 
-.process-step:nth-child(3).revealed {
-  margin-left: 96px;
-}
-
-.process-step:nth-child(4).revealed {
-  margin-left: 144px;
+/* Left column: number bubble + vertical divider */
+.process-step-num {
+  border-right: 1px solid var(--border);
+  padding: 16px 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
 }
 
 .step-number {
   background: var(--primary);
   color: var(--primary-foreground);
   border-radius: 50%;
-  width: 24px;
-  height: 24px;
+  width: 26px;
+  height: 26px;
   display: grid;
   place-items: center;
   font-size: 15px;
+  flex-shrink: 0;
+}
+
+/* Right column: title + text pushed to bottom of card */
+.process-step-body {
+  padding: 16px 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
 .process-step h3 {
   font-size: 24px;
-  margin-bottom: 12px;
+  margin-bottom: 10px;
 }
 
 .process-step p {
@@ -912,32 +919,27 @@ h1, h2, h3, .project-caption, .social-grid > a > span:first-child, .detail-navig
     padding: 20px 16px;
   }
   .process-area {
-    min-height: 680px;
+    min-height: 800px;
   }
   .process-memoji img {
     width: 100%;
     height: auto;
-    top: 170px;
+    top: 80px;
   }
   .process-step {
-    min-height: 170px;
-    padding: 10px;
+    top: 80px;
+    height: 190px;
+    grid-template-columns: 40px 1fr;
   }
-  .process-step:nth-child(2).revealed {
-    margin-left: 10px;
-  }
-  .process-step:nth-child(3).revealed {
-    margin-left: 20px;
-  }
-  .process-step:nth-child(4).revealed {
-    margin-left: 30px;
-  }
+  .process-step:nth-child(2) { margin-left: 40px; }
+  .process-step:nth-child(3) { margin-left: 80px; }
+  .process-step:nth-child(4) { margin-left: 120px; }
   .process-step h3 {
-    font-size: 21px;
-    margin-bottom: 5px;
+    font-size: 20px;
+    margin-bottom: 6px;
   }
   .process-step p {
-    font-size: 12px;
+    font-size: 13px;
   }
   .step-number {
     width: 20px;
