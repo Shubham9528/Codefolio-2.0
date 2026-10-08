@@ -190,20 +190,21 @@ h1, h2, h3, .project-caption, .social-grid > a > span:first-child, .detail-navig
 
 /* About Section */
 .about-intro {
-  padding: 36px 90px 44px;
+  padding: 44px 32px 48px;
   text-align: center;
 }
 
 .about-intro h2 {
-  font-size: 56px;
-  line-height: 1.2;
+  font-size: 46px;
+  line-height: 1.25;
 }
 
 .about-intro p {
   color: var(--muted-foreground);
-  font-size: 28px;
-  line-height: 1.4;
-  margin-top: 20px;
+  font-size: 20px;
+  line-height: 1.65;
+  margin: 20px auto 0;
+  max-width: 860px;
 }
 
 .stats-grid {
@@ -1076,14 +1077,15 @@ h1, h2, h3, .project-caption, .social-grid > a > span:first-child, .detail-navig
     bottom: 0;
   }
   .about-intro {
-    padding: 45px 20px;
+    padding: 40px 20px;
   }
   .about-intro h2,
   .section-title h2 {
-    font-size: 43px;
+    font-size: 36px;
   }
   .about-intro p {
-    font-size: 19px;
+    font-size: 16px;
+    line-height: 1.6;
   }
   .stats-grid {
     grid-template-columns: repeat(2, 1fr);

@@ -1,22 +1,23 @@
 export const personalInfo = {
   name: "Shubham",
-  role: "Creative developer and designer",
-  heroSubtitle: "Creative developer and designer who\nenjoys building simple, engaging websites.",
+  role: "Full-Stack Developer",
+  heroSubtitle:
+    "Full-Stack Developer building scalable web applications\nwith React, Node.js, Express, and AWS.",
   ctaText: "View Resume",
   ctaLink: "#contact",
-  aboutIntroHeading: "More than pixels",
+  aboutIntroHeading: "Building scalable web apps & intelligent systems",
   aboutBio:
-    "I’m a creative developer and designer passionate about building clean, engaging digital experiences that feel both functional and visually thoughtful.\nI enjoy blending minimal design, smooth interactions, and modern storytelling to create websites that connect with people naturally.",
-  email: "hello@loganhayes.com",
+    "Full-Stack Developer with 1+ year of professional experience building scalable web applications using React.js, Node.js, Express.js, MongoDB, REST APIs, and AWS. Currently delivering production-ready full-stack solutions for TruQual and ADSD Engineering, with prior experience at Dentavibe building role-based dashboards and Zoho CRM integrations. Experienced in building microservices with RabbitMQ, Redis, and Socket.IO, as well as AI-powered SaaS platforms — recognized by OpenAI’s Head of Engineering for identifying a UI bug.",
+  email: "hello@shubham.dev",
   timezone: "Asia/Kolkata",
-  location: "India",
+  location: "Pune, India",
 };
 
 export const stats = [
-  { value: "12+", label: "Years creating\ndigital experiences" },
-  { value: "30+", label: "Projects crafted\nwith purpose" },
-  { value: "15+", label: "Collaborated with\ncreative brands" },
-  { value: "100%", label: "Focused on\nsimple experiences" },
+  { value: "1+", label: "Year of professional\nexperience" },
+  { value: "2", label: "Active client\ncollaborations" },
+  { value: "10+", label: "Production pages\n& workflows delivered" },
+  { value: "100%", label: "Production-ready\ncode & delivery" },
 ];
 
 export const services = [
@@ -91,94 +92,67 @@ export const processSteps = [
 
 export const experience = [
   {
-    role: "Senior Frontend Engineer",
-    company: "Acme Corp",
-    year: "2023 - Present",
-    description: "Leading the frontend architecture and building scalable web applications with React and Next.js.",
+    role: "Freelance Full-Stack Developer",
+    company: "TruQual & ADSD Engineering",
+    year: "Oct 2025 – Present",
+    description:
+      "Developing responsive React admin dashboards with RBAC, code-splitting, and secure Node.js + Express + MongoDB backends. Implemented modular CRUD workflows, Firebase JWT auth, and automated email/media integrations with Multer, ImageKit, and Nodemailer.",
   },
   {
-    role: "Creative Developer",
-    company: "Studio Minimal",
-    year: "2020 - 2023",
-    description: "Crafted award-winning interactive experiences and marketing sites for global brands.",
-  },
-  {
-    role: "UI/UX Designer",
-    company: "Design Co",
-    year: "2018 - 2020",
-    description: "Designed user-centric interfaces and established design systems for enterprise software.",
+    role: "Full-Stack Developer",
+    company: "Dentavibe",
+    year: "Feb 2025 – Oct 2025",
+    description:
+      "Delivered 10+ adaptive React.js pages streamlining lead workflows by 30%. Integrated Zoho CRM REST APIs, built secure role-based dashboards (Admin, Coordinator, Dentist) with JWT auth, and deployed AI-powered features with real-time processing.",
   },
 ];
 
 export const education = [
   {
-    degree: "M.S. Computer Science",
-    institution: "Tech University",
-    year: "2016 - 2018",
-    description: "Focused on human-computer interaction and advanced software engineering principles.",
-  },
-  {
-    degree: "B.A. Graphic Design",
-    institution: "Design Institute",
-    year: "2012 - 2016",
-    description: "Studied typography, visual communication, and digital media design.",
+    degree: "Bachelor of Engineering in Computer Science",
+    institution: "JSPM’s Bhivrabai Sawant Institute of Technology and Research, Pune",
+    year: "CGPA: 8.47",
+    description:
+      "Graduated with distinction. Coursework focused on software engineering, database management systems, data structures, algorithms, and distributed systems.",
   },
 ];
 
 export const projects = [
   {
-    slug: "north",
-    title: "North",
-    category: "Architecture",
+    slug: "chat-microservices",
+    title: "Real-Time Chat App",
+    category: "Microservices & Distributed Systems",
     description:
-      "A minimal digital experience crafted for a modern architecture studio focused on timeless spatial design.",
+      "Node.js + TypeScript microservices (User, Chat, Mail) on AWS EC2 with RabbitMQ for async OTP processing, Redis for rate limiting, and Socket.IO for real-time messaging, typing indicators, and read receipts.",
     image:
-      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1200&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=1200&auto=format&fit=crop",
   },
   {
-    slug: "loom",
-    title: "Loom",
-    category: "Portfolio",
+    slug: "career-ai-saas",
+    title: "Career AI SaaS Suite",
+    category: "AI & Career Intelligence",
     description:
-      "A minimal portfolio concept focused on personal identity, editorial layouts, and thoughtful storytelling.",
+      "AI-powered SaaS suite featuring InterviewIQ (voice-based mock interviews with dynamic difficulty & Razorpay payments) and an ATS-optimized AI Resume Builder with 90%+ keyword match rate.",
     image:
-      "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?q=80&w=1200&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?q=80&w=1200&auto=format&fit=crop",
   },
   {
-    slug: "aster",
-    title: "Aster",
-    category: "Fashion",
+    slug: "truqual-platform",
+    title: "TruQual Admin Platform",
+    category: "Full-Stack & RBAC Workflows",
     description:
-      "An editorial fashion experience shaped by minimal luxury, cinematic imagery, and bold typography.",
-    image:
-      "https://images.unsplash.com/photo-1490481651871-ab68de25d43d?q=80&w=1200&auto=format&fit=crop",
-  },
-  {
-    slug: "vale",
-    title: "Vale",
-    category: "Agency",
-    description:
-      "A creative agency website that balances expressive visuals with professional clarity.",
-    image:
-      "https://images.unsplash.com/photo-1497215728101-856f4ea42174?q=80&w=1200&auto=format&fit=crop",
-  },
-  {
-    slug: "frame",
-    title: "Frame",
-    category: "SaaS",
-    description:
-      "A modern SaaS experience with clean communication, structured layouts, and smooth interactions.",
+      "Responsive React application with role-protected admin dashboard, Vite code-splitting, Firebase JWT authentication, candidate tracking workflows, and modular media/email integrations.",
     image:
       "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1200&auto=format&fit=crop",
   },
   {
-    slug: "haven",
-    title: "Haven",
-    category: "Interior",
+    slug: "dentavibe-portal",
+    title: "Dentavibe Healthcare Portal",
+    category: "CRM & Healthcare Automation",
     description:
-      "A warm editorial interior design experience with a calm and immersive visual rhythm.",
+      "Multi-role web application with Zoho CRM integration via REST APIs, automated lead capture pipelines, secure JWT dashboards for Admin/Dentist roles, and AI insurance analysis.",
     image:
-      "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?q=80&w=1200&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?q=80&w=1200&auto=format&fit=crop",
   },
 ];
 
@@ -267,7 +241,7 @@ export const skills = [
 export const testimonials = [
   {
     quote:
-      "Working with Logan was a smooth and thoughtful experience from start to finish. The attention to detail and clean execution truly stood out.",
+      "Working with Shubham was a smooth and thoughtful experience from start to finish. The attention to detail and clean execution truly stood out.",
     author: "Ethan Brooks",
     role: "Creative Director",
     avatar:
