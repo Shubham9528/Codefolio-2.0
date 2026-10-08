@@ -258,10 +258,10 @@ export const testimonials = [
 ];
 
 export const socialLinks = [
-  { label: "Twitter/X", url: "https://x.com", symbol: "𝕏" },
-  { label: "Dribbble", url: "https://dribbble.com", symbol: "⬤" },
-  { label: "Instagram", url: "https://instagram.com", symbol: "◉" },
-  { label: "Behance", url: "https://behance.net", symbol: "Bē" },
+  { label: "GitHub", url: "https://github.com/Shubham9528", iconName: "Github", symbol: "GH" },
+  { label: "LinkedIn", url: "https://linkedin.com", iconName: "Linkedin", symbol: "in" },
+  { label: "Twitter", url: "https://twitter.com", iconName: "Twitter", symbol: "𝕏" },
+  { label: "Email", url: "mailto:hello@shubham.dev", iconName: "Mail", symbol: "✉" },
 ];
 
 export const navMenu = [

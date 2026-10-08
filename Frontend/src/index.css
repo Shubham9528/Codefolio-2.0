@@ -761,11 +761,20 @@ h1, h2, h3, .project-caption, .social-grid > a > span:first-child, .detail-navig
   background: var(--foreground);
   color: var(--background);
   border-radius: 50%;
-  width: 48px;
-  height: 48px;
+  width: 50px;
+  height: 50px;
   display: grid;
   place-items: center;
-  font: 500 20px Arial, sans-serif;
+  transition: transform 0.5s cubic-bezier(0.34, 1.25, 0.64, 1), background 0.2s;
+  will-change: transform;
+}
+
+.social-icon svg {
+  display: block;
+}
+
+.social-grid a:hover .social-icon {
+  transform: rotate(360deg);
 }
 
 /* Site Footer */
