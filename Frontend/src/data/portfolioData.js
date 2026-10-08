@@ -182,6 +182,88 @@ export const projects = [
   },
 ];
 
+export const skills = [
+  {
+    name: "Programming Languages",
+    iconName: "Code2",
+    tags: ["JavaScript", "TypeScript", "HTML5", "CSS3", "SQL", "Java"],
+    icons: [
+      { id: "js",   label: "JavaScript" },
+      { id: "ts",   label: "TypeScript" },
+      { id: "html", label: "HTML5" },
+      { id: "css",  label: "CSS3" },
+      { id: "mysql",label: "SQL" },
+      { id: "java", label: "Java" },
+    ],
+  },
+  {
+    name: "Libraries & Frameworks",
+    iconName: "Layers",
+    tags: ["React.js", "Redux", "Node.js", "Express.js", "Tailwind CSS", "SCSS", "Bootstrap"],
+    icons: [
+      { id: "react",     label: "React.js" },
+      { id: "redux",     label: "Redux" },
+      { id: "nodejs",    label: "Node.js" },
+      { id: "express",   label: "Express.js" },
+      { id: "tailwind",  label: "Tailwind" },
+      { id: "scss",      label: "SCSS" },
+      { id: "bootstrap", label: "Bootstrap" },
+    ],
+  },
+  {
+    name: "Databases",
+    iconName: "Database",
+    tags: ["MongoDB", "Redis"],
+    icons: [
+      { id: "mongodb", label: "MongoDB" },
+      { id: "redis",   label: "Redis" },
+    ],
+  },
+  {
+    name: "Tools & Platforms",
+    iconName: "Wrench",
+    tags: ["Git", "GitHub", "CI/CD", "Postman", "Zoho", "ClickUp", "Asana", "Discord"],
+    icons: [
+      { id: "git",           label: "Git" },
+      { id: "github",        label: "GitHub" },
+      { id: "githubactions", label: "CI/CD" },
+      { id: "postman",       label: "Postman" },
+      { id: "discord",       label: "Discord" },
+    ],
+  },
+  {
+    name: "Cloud & Hosting",
+    iconName: "Cloud",
+    tags: ["AWS", "Vercel", "Render", "Firebase", "Hostinger"],
+    icons: [
+      { id: "aws",      label: "AWS" },
+      { id: "vercel",   label: "Vercel" },
+      { id: "firebase", label: "Firebase" },
+      { id: "docker",   label: "Docker" },
+    ],
+  },
+  {
+    name: "AI & Dev Tools",
+    iconName: "Bot",
+    tags: ["Cursor", "Windsurf", "Bolt", "Lovable", "MCP", "Leap.new", "AI Agents"],
+    icons: [
+      { id: "openai", label: "OpenAI" },
+      { id: "vscode", label: "VS Code" },
+      { id: "github", label: "Copilot" },
+    ],
+  },
+  {
+    name: "Microservices",
+    iconName: "Network",
+    tags: ["RabbitMQ", "Docker", "Redis"],
+    icons: [
+      { id: "docker",     label: "Docker" },
+      { id: "redis",      label: "Redis" },
+      { id: "kubernetes", label: "Kubernetes" },
+    ],
+  },
+];
+
 export const testimonials = [
   {
     quote:
@@ -213,6 +295,7 @@ export const navMenu = [
   { label: "About", to: "about", iconName: "UserRound" },
   { label: "Experience", to: "experience", iconName: "GraduationCap" },
   { label: "Projects", to: "projects", iconName: "BriefcaseBusiness" },
+  { label: "Skills", to: "skills", iconName: "Code2" },
   { label: "Services", to: "services", iconName: "Sparkles" },
   { label: "Process", to: "process", iconName: "GitBranch" },
   { label: "Contact", to: "contact", iconName: "Send" },
