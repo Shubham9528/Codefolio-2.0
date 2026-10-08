@@ -947,7 +947,7 @@ h1, h2, h3, .project-caption, .social-grid > a > span:first-child, .detail-navig
   position: relative;
   flex: 1;
   overflow: hidden;
-  background: var(--muted);
+  background: var(--background);
 }
 
 /* Each category panel – all stacked, only active one shown */

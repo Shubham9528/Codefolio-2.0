@@ -67,7 +67,7 @@ export function Skills() {
                     {skill.icons.map((icon) => (
                       <div key={`${icon.id}-${icon.label}`} className="skill-icon-card">
                         <img
-                          src={`${SKILLICONS}${icon.id}&theme=light`}
+                          src={icon.url ?? `${SKILLICONS}${icon.id}&theme=light`}
                           alt={icon.label}
                           width={40}
                           height={40}

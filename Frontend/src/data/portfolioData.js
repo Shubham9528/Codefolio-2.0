@@ -247,7 +247,7 @@ export const skills = [
     iconName: "Bot",
     tags: ["Cursor", "Windsurf", "Bolt", "Lovable", "MCP", "Leap.new", "AI Agents"],
     icons: [
-      { id: "openai", label: "OpenAI" },
+      { id: "openai", label: "OpenAI", url: "https://cdn.simpleicons.org/openai" },
       { id: "vscode", label: "VS Code" },
       { id: "github", label: "Copilot" },
     ],
