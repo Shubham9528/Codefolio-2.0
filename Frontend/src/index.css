@@ -49,7 +49,7 @@ h1, h2, h3, p {
   margin: 0;
 }
 
-h1, h2, h3, .project-caption, .social-grid > a > span:first-child, .detail-navigation {
+h1, h2, h3, .project-caption {
   font-family: "Instrument Serif", Georgia, serif;
   font-weight: 400;
 }
@@ -1075,9 +1075,6 @@ h1, h2, h3, .project-caption, .social-grid > a > span:first-child, .detail-navig
   .hero-copy p {
     font-size: 18px;
     max-width: 330px;
-  }
-  .desktop-break {
-    display: none;
   }
   .hero-memoji {
     width: 270px;
