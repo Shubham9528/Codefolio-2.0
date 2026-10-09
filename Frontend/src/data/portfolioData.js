@@ -155,7 +155,7 @@ export const projects = [
     description:
       "AI-powered Customer Support Chatbot using Gemini AI Embeddings and Pinecone for vector search. Implements RAG to retrieve business knowledge and generate context-aware responses.",
     image:
-      "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=1200&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1531746790731-6c087fecd65a?q=80&w=1200&auto=format&fit=crop",
     liveUrl: "https://rag-customer-support-chatbot-wcw4.onrender.com/",
   },
 ];
