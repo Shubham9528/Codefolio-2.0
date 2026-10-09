@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { SectionTitle } from "../ui/SectionTitle";
-import { Button } from "../ui/Button";
-import { services, socialLinks, personalInfo } from "../../data/portfolioData";
+import { socialLinks } from "../../data/portfolioData";
 import contactImg from "/contact.png";
 
 function SocialIcon({ name }) {
@@ -9,7 +8,13 @@ function SocialIcon({ name }) {
   switch (key) {
     case "github":
       return (
-        <svg width="25" height="25" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+        <svg
+          width="25"
+          height="25"
+          viewBox="0 0 24 24"
+          fill="currentColor"
+          aria-hidden="true"
+        >
           <path
             fillRule="evenodd"
             clipRule="evenodd"
@@ -19,20 +24,42 @@ function SocialIcon({ name }) {
       );
     case "linkedin":
       return (
-        <svg width="23" height="23" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+        <svg
+          width="23"
+          height="23"
+          viewBox="0 0 24 24"
+          fill="currentColor"
+          aria-hidden="true"
+        >
           <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z" />
         </svg>
       );
     case "leetcode":
       return (
-        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+        <svg
+          width="22"
+          height="22"
+          viewBox="0 0 24 24"
+          fill="currentColor"
+          aria-hidden="true"
+        >
           <path d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .062 2.362 5.83 5.83 0 0 0 .349 1.017 5.938 5.938 0 0 0 1.271 1.818l4.277 4.193.039.038c2.248 2.165 5.852 2.133 8.063-.074l2.396-2.392c.54-.54.54-1.414.003-1.955a1.378 1.378 0 0 0-1.951-.003l-2.396 2.392a3.021 3.021 0 0 1-4.205.038l-.02-.019-4.276-4.193c-.652-.64-.972-1.469-.948-2.263a2.68 2.68 0 0 1 .066-.523 2.545 2.545 0 0 1 .619-1.164L9.13 8.114c1.058-1.134 3.204-1.27 4.43-.278l3.501 2.831c.593.48 1.461.387 1.94-.207a1.384 1.384 0 0 0-.207-1.943l-3.5-2.831c-.8-.647-1.766-1.045-2.774-1.202l2.015-2.158A1.384 1.384 0 0 0 13.483 0zm-2.866 12.815a1.38 1.38 0 0 0-1.38 1.382 1.38 1.38 0 0 0 1.38 1.382H20.79a1.38 1.38 0 0 0 1.38-1.382 1.38 1.38 0 0 0-1.38-1.382z" />
         </svg>
       );
     case "email":
     case "mail":
       return (
-        <svg width="23" height="23" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+        <svg
+          width="23"
+          height="23"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          aria-hidden="true"
+        >
           <rect width="20" height="16" x="2" y="4" rx="2" />
           <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
         </svg>
@@ -44,19 +71,50 @@ function SocialIcon({ name }) {
 
 export function Contact() {
   const [sent, setSent] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState("");
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     const form = e.currentTarget;
     const data = new FormData(form);
-    const subject = encodeURIComponent(
-      `Project inquiry from ${data.get("name")}`,
-    );
-    const body = encodeURIComponent(
-      `Name: ${data.get("name")}\nEmail: ${data.get("email")}\nService: ${data.get("service")}\nBudget: ${data.get("budget")}\n\n${data.get("message")}`,
-    );
-    window.location.href = `mailto:${personalInfo.email}?subject=${subject}&body=${body}`;
-    setSent(true);
+
+    setLoading(true);
+    setError("");
+    setSent(false);
+
+    try {
+      // Uses the environment variable for the API URL, falling back to localhost if not set
+      const apiUrl = import.meta.env.VITE_API_URL;
+
+      const response = await fetch(`${apiUrl}/api/email/send`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          name: data.get("name"),
+          email: data.get("email"),
+          subject: data.get("subject"),
+          message: data.get("message"),
+        }),
+      });
+
+      const result = await response.json();
+
+      if (response.ok) {
+        setSent(true);
+        form.reset();
+      } else {
+        setError(result.message || "Failed to send message.");
+      }
+    } catch (err) {
+      setError(
+        "An error occurred. Make sure the backend server is running." + err,
+      );
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -65,57 +123,63 @@ export function Contact() {
 
       <div className="contact-layout">
         <form className="contact-form" onSubmit={handleSubmit}>
+          <h3 className="contact-form-heading">Send a Message</h3>
           <div className="form-grid">
-            <label>
-              Name
-              <input name="name" placeholder="Jane Smith" required />
-            </label>
-            <label>
-              Email
-              <input
-                name="email"
-                type="email"
-                placeholder="jane@example.com"
-                required
-              />
-            </label>
-            <label>
-              Service
-              <select name="service" required defaultValue="">
-                <option value="" disabled>
-                  Select...
-                </option>
-                {services.map((s) => (
-                  <option key={s.title}>{s.title}</option>
-                ))}
-              </select>
-            </label>
-            <label>
-              Budget
-              <select name="budget" required defaultValue="">
-                <option value="" disabled>
-                  Select...
-                </option>
-                <option>Upto $2000</option>
-                <option>$2000 - $5000</option>
-                <option>$5000+</option>
-              </select>
-            </label>
-          </div>
-
-          <label>
-            Message
-            <textarea
-              name="message"
-              placeholder="Hey Shubham, could you help me with..."
+            <input
+              name="name"
+              placeholder="Name *"
               required
+              disabled={loading}
             />
-          </label>
+            <input
+              name="email"
+              type="email"
+              placeholder="Email *"
+              required
+              disabled={loading}
+            />
+          </div>
+          <input
+            name="subject"
+            placeholder="Subject *"
+            required
+            disabled={loading}
+          />
+          <textarea
+            name="message"
+            placeholder="Message *"
+            required
+            disabled={loading}
+          />
 
-          <Button type="submit">Submit</Button>
+          {error && (
+            <p style={{ color: "red", fontSize: "14px", margin: "0" }}>
+              {error}
+            </p>
+          )}
+
+          <button type="submit" className="contact-send-btn" disabled={loading}>
+            {loading ? "Sending..." : "Send Message"}
+            {!loading && (
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
+                <path d="M22 2 11 13" />
+                <path d="M22 2 15 22 11 13 2 9l20-7z" />
+              </svg>
+            )}
+          </button>
+
           {sent && (
-            <p className="form-note">
-              Your email app should open with your message ready to send.
+            <p className="form-note" style={{ color: "green" }}>
+              Message sent successfully! I'll get back to you soon.
             </p>
           )}
         </form>
