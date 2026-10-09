@@ -4,7 +4,7 @@ export const personalInfo = {
   heroSubtitle:
     "Full-Stack Developer building scalable web applications\nwith React, Node.js, Express, and AWS.",
   ctaText: "View Resume",
-  ctaLink: "#contact",
+  ctaLink: "https://drive.google.com/file/d/1n8vxB43v_piLyhGkgZh8tfEpH6dJrhzR/view",
   aboutIntroHeading: "Building scalable web apps & intelligent systems",
   aboutBio:
     "Full-Stack Developer with 1+ year of professional experience building scalable web applications using React.js, Node.js, Express.js, MongoDB, REST APIs, and AWS. Currently delivering production-ready full-stack solutions for TruQual and ADSD Engineering, with prior experience at Dentavibe building role-based dashboards and Zoho CRM integrations. Experienced in building microservices with RabbitMQ, Redis, and Socket.IO, as well as AI-powered SaaS platforms — recognized by OpenAI’s Head of Engineering for identifying a UI bug.",
@@ -22,47 +22,47 @@ export const stats = [
 
 export const services = [
   {
-    title: "Web design",
-    text: "Clean and modern websites designed with clarity, balance, and thoughtful user experiences.",
-    iconName: "PanelsTopLeft",
+    title: "Full-Stack Development",
+    text: "Building responsive, production-ready web applications using React.js, Node.js, Express, and MongoDB.",
+    iconName: "Code2",
     features: [
-      "Responsive layouts",
-      "Visual hierarchy",
-      "Modern aesthetics",
-      "Clean structure",
+      "React.js & Tailwind CSS",
+      "Node.js & Express APIs",
+      "MongoDB Databases",
+      "Authentication & RBAC",
     ],
   },
   {
-    title: "Framer development",
-    text: "Responsive Framer websites developed with smooth interactions, structure, and seamless performance.",
-    iconName: "LayoutTemplate",
+    title: "AI Integration & SaaS",
+    text: "Developing AI-powered products, intelligent chatbots, and RAG systems using Gemini and vector search.",
+    iconName: "Bot",
     features: [
-      "Custom components",
-      "Smooth animations",
-      "CMS integration",
-      "SEO optimization",
+      "AI Automations",
+      "RAG & Vector Search",
+      "Chatbots & Voice Bots",
+      "OpenAI & Gemini APIs",
     ],
   },
   {
-    title: "UI/UX design",
-    text: "User-focused digital interfaces crafted for usability, clarity, and engaging visual experiences.",
-    iconName: "MousePointer2",
+    title: "Microservices & APIs",
+    text: "Designing scalable distributed systems with async processing, caching, and real-time communication.",
+    iconName: "Network",
     features: [
-      "Wireframing & Prototyping",
-      "User research",
-      "Design systems",
-      "Usability testing",
+      "RESTful API Design",
+      "RabbitMQ Message Queues",
+      "Redis Caching",
+      "Socket.IO Real-Time",
     ],
   },
   {
-    title: "Creative direction",
-    text: "Creative brand experiences shaped through refined visuals, storytelling, and consistent digital presence.",
-    iconName: "PenTool",
+    title: "CRM & Platform Integration",
+    text: "Streamlining business workflows with seamless integrations for CRMs, payments, and automated pipelines.",
+    iconName: "Workflow",
     features: [
-      "Brand identity",
-      "Visual storytelling",
-      "Art direction",
-      "Concept development",
+      "Zoho CRM Automation",
+      "Razorpay Payments",
+      "Firebase JWT & Auth",
+      "Media & Email APIs",
     ],
   },
 ];
@@ -275,18 +275,10 @@ export const testimonials = [
   {
     quote:
       "Working with Shubham was a smooth and thoughtful experience from start to finish. The attention to detail and clean execution truly stood out.",
-    author: "Ethan Brooks",
-    role: "Creative Director",
+    author: "Founder",
+    role: "TruQual Director",
     avatar:
       "https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=200&auto=format&fit=crop",
-  },
-  {
-    quote:
-      "The visual clarity and interactive polish brought to our studio was exceptional. Delivered beyond our expectations with seamless communication.",
-    author: "Sophia Vance",
-    role: "Head of Product",
-    avatar:
-      "https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=200&auto=format&fit=crop",
   },
 ];
 

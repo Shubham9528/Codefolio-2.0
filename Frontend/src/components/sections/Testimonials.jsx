@@ -16,7 +16,7 @@ export function Testimonials() {
       <div className="testimonial">
         <div className="rating">
           <span className="stars">★★★★★</span>
-          <strong>4.9+</strong>
+          <strong>4.1+</strong>
           <span>Overall ratings</span>
         </div>
         <div className="quote-controls">

@@ -9,10 +9,8 @@ export function Hero() {
         <h1>
           Hello, I'm <span>{personalInfo.name}</span>
         </h1>
-        <p>
-          Creative developer and designer who
-          <br className="desktop-break" />
-          enjoys building simple, engaging websites.
+        <p className="whitespace-pre-line">
+          {personalInfo.heroSubtitle}
         </p>
         <Button href={personalInfo.ctaLink}>{personalInfo.ctaText}</Button>
       </div>
