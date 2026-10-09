@@ -149,13 +149,14 @@ export const projects = [
       "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1200&auto=format&fit=crop",
   },
   {
-    slug: "dentavibe-portal",
-    title: "Dentavibe Healthcare Portal",
-    category: "CRM & Healthcare Automation",
+    slug: "rag-chatbot",
+    title: "RAG Customer Support Chatbot",
+    category: "AI & Vector Search",
     description:
-      "Multi-role web application with Zoho CRM integration via REST APIs, automated lead capture pipelines, secure JWT dashboards for Admin/Dentist roles, and AI insurance analysis.",
+      "AI-powered Customer Support Chatbot using Gemini AI Embeddings and Pinecone for vector search. Implements RAG to retrieve business knowledge and generate context-aware responses.",
     image:
-      "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?q=80&w=1200&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=1200&auto=format&fit=crop",
+    liveUrl: "https://rag-customer-support-chatbot-wcw4.onrender.com/",
   },
 ];
 

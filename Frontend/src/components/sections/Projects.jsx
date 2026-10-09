@@ -9,7 +9,9 @@ export function Projects() {
       <div className="projects-grid">
         {projects.map((project) => (
           <a
-            href={`#project-${project.slug}`}
+            href={project.liveUrl || `#project-${project.slug}`}
+            target={project.liveUrl ? "_blank" : undefined}
+            rel={project.liveUrl ? "noopener noreferrer" : undefined}
             className="project-tile"
             key={project.slug}
           >
