@@ -96,24 +96,25 @@ export const experience = [
     company: "TruQual & ADSD Engineering",
     year: "Oct 2025 – Present",
     description:
-      "Developing responsive React admin dashboards with RBAC, code-splitting, and secure Node.js + Express + MongoDB backends. Implemented modular CRUD workflows, Firebase JWT auth, and automated email/media integrations with Multer, ImageKit, and Nodemailer.",
+      "Building responsive React dashboards, secure REST APIs, and production-ready full-stack features with Node.js and MongoDB.",
   },
   {
     role: "Full-Stack Developer",
     company: "Dentavibe",
     year: "Feb 2025 – Oct 2025",
     description:
-      "Delivered 10+ adaptive React.js pages streamlining lead workflows by 30%. Integrated Zoho CRM REST APIs, built secure role-based dashboards (Admin, Coordinator, Dentist) with JWT auth, and deployed AI-powered features with real-time processing.",
+      "Delivered 10+ React pages, integrated Zoho CRM APIs, and built secure role-based dashboards with AI features.",
   },
 ];
 
 export const education = [
   {
     degree: "Bachelor of Engineering in Computer Science",
-    institution: "JSPM’s Bhivrabai Sawant Institute of Technology and Research, Pune",
+    institution:
+      "JSPM’s Bhivrabai Sawant Institute of Technology and Research, Pune",
     year: "CGPA: 8.47",
     description:
-      "Graduated with distinction. Coursework focused on software engineering, database management systems, data structures, algorithms, and distributed systems.",
+      "Focused on software engineering, data structures, algorithms, and full-stack web architectures.",
   },
 ];
 
@@ -126,6 +127,7 @@ export const projects = [
       "Node.js + TypeScript microservices (User, Chat, Mail) on AWS EC2 with RabbitMQ for async OTP processing, Redis for rate limiting, and Socket.IO for real-time messaging, typing indicators, and read receipts.",
     image:
       "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=1200&auto=format&fit=crop",
+    liveUrl: "http://13.49.74.24:3000/",
   },
   {
     slug: "career-ai-saas",
@@ -135,6 +137,7 @@ export const projects = [
       "AI-powered SaaS suite featuring InterviewIQ (voice-based mock interviews with dynamic difficulty & Razorpay payments) and an ATS-optimized AI Resume Builder with 90%+ keyword match rate.",
     image:
       "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?q=80&w=1200&auto=format&fit=crop",
+    liveUrl: "https://interview-iq-ai-vert.vercel.app/",
   },
   {
     slug: "truqual-platform",
@@ -162,25 +165,33 @@ export const skills = [
     iconName: "Code2",
     tags: ["JavaScript", "TypeScript", "HTML5", "CSS3", "SQL", "Java"],
     icons: [
-      { id: "js",   label: "JavaScript" },
-      { id: "ts",   label: "TypeScript" },
+      { id: "js", label: "JavaScript" },
+      { id: "ts", label: "TypeScript" },
       { id: "html", label: "HTML5" },
-      { id: "css",  label: "CSS3" },
-      { id: "mysql",label: "SQL" },
+      { id: "css", label: "CSS3" },
+      { id: "mysql", label: "SQL" },
       { id: "java", label: "Java" },
     ],
   },
   {
     name: "Libraries & Frameworks",
     iconName: "Layers",
-    tags: ["React.js", "Redux", "Node.js", "Express.js", "Tailwind CSS", "SCSS", "Bootstrap"],
+    tags: [
+      "React.js",
+      "Redux",
+      "Node.js",
+      "Express.js",
+      "Tailwind CSS",
+      "SCSS",
+      "Bootstrap",
+    ],
     icons: [
-      { id: "react",     label: "React.js" },
-      { id: "redux",     label: "Redux" },
-      { id: "nodejs",    label: "Node.js" },
-      { id: "express",   label: "Express.js" },
-      { id: "tailwind",  label: "Tailwind" },
-      { id: "scss",      label: "SCSS" },
+      { id: "react", label: "React.js" },
+      { id: "redux", label: "Redux" },
+      { id: "nodejs", label: "Node.js" },
+      { id: "express", label: "Express.js" },
+      { id: "tailwind", label: "Tailwind" },
+      { id: "scss", label: "SCSS" },
       { id: "bootstrap", label: "Bootstrap" },
     ],
   },
@@ -190,19 +201,28 @@ export const skills = [
     tags: ["MongoDB", "Redis"],
     icons: [
       { id: "mongodb", label: "MongoDB" },
-      { id: "redis",   label: "Redis" },
+      { id: "redis", label: "Redis" },
     ],
   },
   {
     name: "Tools & Platforms",
     iconName: "Wrench",
-    tags: ["Git", "GitHub", "CI/CD", "Postman", "Zoho", "ClickUp", "Asana", "Discord"],
+    tags: [
+      "Git",
+      "GitHub",
+      "CI/CD",
+      "Postman",
+      "Zoho",
+      "ClickUp",
+      "Asana",
+      "Discord",
+    ],
     icons: [
-      { id: "git",           label: "Git" },
-      { id: "github",        label: "GitHub" },
+      { id: "git", label: "Git" },
+      { id: "github", label: "GitHub" },
       { id: "githubactions", label: "CI/CD" },
-      { id: "postman",       label: "Postman" },
-      { id: "discord",       label: "Discord" },
+      { id: "postman", label: "Postman" },
+      { id: "discord", label: "Discord" },
     ],
   },
   {
@@ -210,18 +230,30 @@ export const skills = [
     iconName: "Cloud",
     tags: ["AWS", "Vercel", "Render", "Firebase", "Hostinger"],
     icons: [
-      { id: "aws",      label: "AWS" },
-      { id: "vercel",   label: "Vercel" },
+      { id: "aws", label: "AWS" },
+      { id: "vercel", label: "Vercel" },
       { id: "firebase", label: "Firebase" },
-      { id: "docker",   label: "Docker" },
+      { id: "docker", label: "Docker" },
     ],
   },
   {
     name: "AI & Dev Tools",
     iconName: "Bot",
-    tags: ["Cursor", "Windsurf", "Bolt", "Lovable", "MCP", "Leap.new", "AI Agents"],
+    tags: [
+      "Cursor",
+      "Windsurf",
+      "Bolt",
+      "Lovable",
+      "MCP",
+      "Leap.new",
+      "AI Agents",
+    ],
     icons: [
-      { id: "openai", label: "OpenAI", url: "https://cdn.simpleicons.org/openai" },
+      {
+        id: "openai",
+        label: "OpenAI",
+        url: "https://cdn.simpleicons.org/openai",
+      },
       { id: "vscode", label: "VS Code" },
       { id: "github", label: "Copilot" },
     ],
@@ -231,8 +263,8 @@ export const skills = [
     iconName: "Network",
     tags: ["RabbitMQ", "Docker", "Redis"],
     icons: [
-      { id: "docker",     label: "Docker" },
-      { id: "redis",      label: "Redis" },
+      { id: "docker", label: "Docker" },
+      { id: "redis", label: "Redis" },
       { id: "kubernetes", label: "Kubernetes" },
     ],
   },
@@ -258,10 +290,30 @@ export const testimonials = [
 ];
 
 export const socialLinks = [
-  { label: "GitHub", url: "https://github.com/Shubham9528", iconName: "Github", symbol: "GH" },
-  { label: "LinkedIn", url: "https://linkedin.com", iconName: "Linkedin", symbol: "in" },
-  { label: "Twitter", url: "https://twitter.com", iconName: "Twitter", symbol: "𝕏" },
-  { label: "Email", url: "mailto:hello@shubham.dev", iconName: "Mail", symbol: "✉" },
+  {
+    label: "GitHub",
+    url: "https://github.com/Shubham9528",
+    iconName: "Github",
+    symbol: "GH",
+  },
+  {
+    label: "LinkedIn",
+    url: "https://linkedin.com",
+    iconName: "Linkedin",
+    symbol: "in",
+  },
+  {
+    label: "Twitter",
+    url: "https://twitter.com",
+    iconName: "Twitter",
+    symbol: "𝕏",
+  },
+  {
+    label: "Email",
+    url: "mailto:hello@shubham.dev",
+    iconName: "Mail",
+    symbol: "✉",
+  },
 ];
 
 export const navMenu = [
