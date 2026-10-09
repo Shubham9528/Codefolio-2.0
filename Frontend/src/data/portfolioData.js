@@ -4,7 +4,8 @@ export const personalInfo = {
   heroSubtitle:
     "Full-Stack Developer building scalable web applications\nwith React, Node.js, Express, and AWS.",
   ctaText: "View Resume",
-  ctaLink: "https://drive.google.com/file/d/1n8vxB43v_piLyhGkgZh8tfEpH6dJrhzR/view",
+  ctaLink:
+    "https://drive.google.com/file/d/1n8vxB43v_piLyhGkgZh8tfEpH6dJrhzR/view",
   aboutIntroHeading: "Building scalable web apps & intelligent systems",
   aboutBio:
     "Full-Stack Developer with 1+ year of professional experience building scalable web applications using React.js, Node.js, Express.js, MongoDB, REST APIs, and AWS. Currently delivering production-ready full-stack solutions for TruQual and ADSD Engineering, with prior experience at Dentavibe building role-based dashboards and Zoho CRM integrations. Experienced in building microservices with RabbitMQ, Redis, and Socket.IO, as well as AI-powered SaaS platforms — recognized by OpenAI’s Head of Engineering for identifying a UI bug.",
@@ -16,7 +17,7 @@ export const personalInfo = {
 export const stats = [
   { value: "1+", label: "Year of professional\nexperience" },
   { value: "2", label: "Active client\ncollaborations" },
-  { value: "10+", label: "Production pages\n& workflows delivered" },
+  { value: "10+", label: "Production Projects\n& workflows delivered" },
   { value: "100%", label: "Production-ready\ncode & delivery" },
 ];
 
@@ -296,10 +297,10 @@ export const socialLinks = [
     symbol: "in",
   },
   {
-    label: "Twitter",
-    url: "https://twitter.com",
-    iconName: "Twitter",
-    symbol: "𝕏",
+    label: "LeetCode",
+    url: "https://leetcode.com/u/83pqvLUgso/",
+    iconName: "LeetCode",
+    symbol: "LC",
   },
   {
     label: "Email",

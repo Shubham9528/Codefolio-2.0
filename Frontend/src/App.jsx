@@ -6,14 +6,44 @@ import { FloatingNav } from "./components/layout/FloatingNav";
 import { Hero } from "./components/sections/Hero";
 
 // Lazy loaded components (below the fold)
-const About = lazy(() => import("./components/sections/About").then((mod) => ({ default: mod.About })));
-const Experience = lazy(() => import("./components/sections/Experience").then((mod) => ({ default: mod.Experience })));
-const Projects = lazy(() => import("./components/sections/Projects").then((mod) => ({ default: mod.Projects })));
-const Skills = lazy(() => import("./components/sections/Skills").then((mod) => ({ default: mod.Skills })));
-const Services = lazy(() => import("./components/sections/Services").then((mod) => ({ default: mod.Services })));
-const Process = lazy(() => import("./components/sections/Process").then((mod) => ({ default: mod.Process })));
-const Testimonials = lazy(() => import("./components/sections/Testimonials").then((mod) => ({ default: mod.Testimonials })));
-const Contact = lazy(() => import("./components/sections/Contact").then((mod) => ({ default: mod.Contact })));
+const About = lazy(() =>
+  import("./components/sections/About").then((mod) => ({ default: mod.About })),
+);
+const Experience = lazy(() =>
+  import("./components/sections/Experience").then((mod) => ({
+    default: mod.Experience,
+  })),
+);
+const Projects = lazy(() =>
+  import("./components/sections/Projects").then((mod) => ({
+    default: mod.Projects,
+  })),
+);
+const Skills = lazy(() =>
+  import("./components/sections/Skills").then((mod) => ({
+    default: mod.Skills,
+  })),
+);
+const Services = lazy(() =>
+  import("./components/sections/Services").then((mod) => ({
+    default: mod.Services,
+  })),
+);
+const Process = lazy(() =>
+  import("./components/sections/Process").then((mod) => ({
+    default: mod.Process,
+  })),
+);
+const Testimonials = lazy(() =>
+  import("./components/sections/Testimonials").then((mod) => ({
+    default: mod.Testimonials,
+  })),
+);
+const Contact = lazy(() =>
+  import("./components/sections/Contact").then((mod) => ({
+    default: mod.Contact,
+  })),
+);
 
 function App() {
   return (
@@ -24,10 +54,10 @@ function App() {
         <Hero />
         <Suspense fallback={<div style={{ minHeight: "100vh" }} />}>
           <About />
-          <Experience />
           <Projects />
           <Skills />
           <Services />
+          <Experience />
           <Process />
           <Testimonials />
           <Contact />
