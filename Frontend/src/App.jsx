@@ -56,10 +56,10 @@ function App() {
         <Suspense fallback={<div style={{ minHeight: "100vh" }} />}>
           <About />
           <Projects />
-          <Skills />
           <Services />
           <Experience />
           <Process />
+          <Skills />
           <Testimonials />
           <Contact />
         </Suspense>
