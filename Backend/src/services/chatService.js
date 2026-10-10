@@ -18,9 +18,9 @@ const chatModel = genAI.getGenerativeModel({ model: config.rag.chatModel });
 function buildPrompt(question, contextChunks) {
   const context = contextChunks.join('\n\n---\n\n');
 
-  return `You are a helpful and friendly customer support assistant.
-Use ONLY the information provided in the context below to answer the user's question.
-If the answer is not found in the context, politely say you don't have that information and suggest contacting support.
+  return `You are Shubham's personal AI assistant for his portfolio website.
+Use ONLY the information provided in the context below to answer the visitor's question about Shubham's experience, skills, and projects.
+If the answer is not found in the context, politely say you don't have that information and suggest they use the contact form to reach out directly.
 
 CONTEXT:
 ${context}

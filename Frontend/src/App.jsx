@@ -4,6 +4,7 @@ import { StatusBar } from "./components/layout/StatusBar";
 import { Footer } from "./components/layout/Footer";
 import { FloatingNav } from "./components/layout/FloatingNav";
 import { Hero } from "./components/sections/Hero";
+import { ChatBot } from "./components/ui/ChatBot";
 
 // Lazy loaded components (below the fold)
 const About = lazy(() =>
@@ -65,6 +66,7 @@ function App() {
       </main>
       <Footer />
       <FloatingNav />
+      <ChatBot />
     </div>
   );
 }
