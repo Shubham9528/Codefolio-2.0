@@ -9,10 +9,9 @@
 const INTERVAL_MS = (14 * 60 + 30) * 1000; // 14 minutes 30 seconds (870,000 ms)
 
 export function startKeepAlive(port = 3000) {
-  // Render automatically injects RENDER_EXTERNAL_URL (e.g. https://your-app.onrender.com)
   const baseUrl = process.env.SERVER_URL || `http://localhost:${port}`;
 
-  const pingUrl = `${baseUrl.replace(/\/$/, "")}/api/health`;
+  const pingUrl = `${baseUrl.replace(/\/$/, "")}/`;
 
   console.log(
     `⏱️  Keep-alive service initialized for: ${pingUrl} (every 14m 30s)`,
