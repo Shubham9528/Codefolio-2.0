@@ -50,7 +50,7 @@ export function ChatBot() {
 
     try {
       // Assuming Backend is running on port 4000 based on .env
-      const response = await fetch("http://localhost:4000/api/chat", {
+      const response = await fetch(`${import.meta.env.VITE_API_URL}/api/chat`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ question: userMsg.content }),
@@ -108,13 +108,15 @@ export function ChatBot() {
               </button>
             </div>
             <h3 className="chatbot-title">Codefolio Chatbot</h3>
-            <p className="chatbot-subtitle">
-              Ask anything about me.
-            </p>
+            <p className="chatbot-subtitle">Ask anything about me.</p>
           </div>
 
           {/* Messages Body */}
-          <div className="chatbot-body" data-lenis-prevent="true" onWheel={(e) => e.stopPropagation()}>
+          <div
+            className="chatbot-body"
+            data-lenis-prevent="true"
+            onWheel={(e) => e.stopPropagation()}
+          >
             <div className="chatbot-message user-message">
               <div className="chatbot-bubble">Hello, how are you doing?</div>
               <div className="chatbot-time">08:15 AM</div>
