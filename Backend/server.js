@@ -18,7 +18,7 @@ const PORT = process.env.PORT;
 // CORS Configuration
 const corsOptions = {
   origin: [
-    "http://localhost:5173",
+    "https://www.codefolio.co.in",
     "http://localhost:5174",
     "https://codefolio-2-0.vercel.app",
     process.env.FRONTEND_URL,
