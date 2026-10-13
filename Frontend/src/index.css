@@ -180,10 +180,10 @@ h1, h2, h3, .project-caption {
 
 .hero-memoji {
   position: absolute;
-  right: 16px;
+  right: -55px;
   bottom: 0;
-  width: 350px;
-  height: 400px;
+  width: 410px;
+  height: 440px;
   object-fit: contain;
   object-position: center bottom;
 }
