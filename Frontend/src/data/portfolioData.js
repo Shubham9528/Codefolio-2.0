@@ -2,7 +2,7 @@ export const personalInfo = {
   name: "Shubham",
   role: "Full-Stack Developer",
   heroSubtitle:
-    "Full-Stack Developer building scalable web applications\nwith React, Node.js, Express, and AWS.",
+    "Full-Stack Developer building scalable, high-performance\nweb applications with modern technologies, AI-powered\nsolutions, and cloud infrastructure.",
   ctaText: "View Resume",
   ctaLink:
     "https://drive.google.com/file/d/1n8vxB43v_piLyhGkgZh8tfEpH6dJrhzR/view",
