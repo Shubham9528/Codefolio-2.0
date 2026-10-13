@@ -6,7 +6,7 @@ export const personalInfo = {
   ctaText: "View Resume",
   ctaLink:
     "https://drive.google.com/file/d/1n8vxB43v_piLyhGkgZh8tfEpH6dJrhzR/view",
-  aboutIntroHeading: "Building scalable web apps & intelligent systems",
+  aboutIntroHeading: "More Than Just Code",
   aboutBio:
     "Full-Stack Developer with 1+ year of professional experience building scalable web applications using React.js, Node.js, Express.js, MongoDB, REST APIs, and AWS. Currently delivering production-ready full-stack solutions for TruQual and ADSD Engineering, with prior experience at Dentavibe building role-based dashboards and Zoho CRM integrations. Experienced in building microservices with RabbitMQ, Redis, and Socket.IO, as well as AI-powered SaaS platforms — recognized by OpenAI’s Head of Engineering for identifying a UI bug.",
   email: "hello@shubham.dev",
