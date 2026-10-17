@@ -128,7 +128,7 @@ export const projects = [
       "Node.js + TypeScript microservices (User, Chat, Mail) on AWS EC2 with RabbitMQ for async OTP processing, Redis for rate limiting, and Socket.IO for real-time messaging, typing indicators, and read receipts.",
     image:
       "https://images.unsplash.com/photo-1611746872915-64382b5c76da?q=80&w=1200&auto=format&fit=crop",
-    liveUrl: "http://13.49.74.24:3000/",
+    liveUrl: "https://github.com/Shubham9528/ChatApp-Microservice-project",
   },
   {
     slug: "career-ai-saas",
